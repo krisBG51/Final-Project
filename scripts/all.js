@@ -11,7 +11,20 @@ function fetchTopTenMovies() {
             displayMovies(data.results.slice(0, 12));
         })
         .catch(error => console.error(error));
-        s
+        
 
 
+}
+
+function displayMovies(movies) {
+    const movieContainer = document.getElementById('movie-container');
+    movieContainer.innerHTML = '';
+
+    movies.forEach(movie => {
+        let movieCard = document.createElement('div');
+        movieCard.classList.add('flip', 'flip-vertical')
+        movieCard.innerHTML = '
+           
+        ' 
+    })
 }
